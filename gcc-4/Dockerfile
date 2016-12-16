@@ -1,4 +1,4 @@
-FROM Rikorose/gcc-cmake:gcc-4
+FROM rikorose/gcc-cmake:gcc-4
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     libgtest-dev \
