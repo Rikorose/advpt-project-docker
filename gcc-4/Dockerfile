@@ -1,11 +1,5 @@
 FROM rikorose/gcc-cmake:gcc-4
 
-#RUN apt-get update && apt-get install -y --no-install-recommends \
-#    libgtest-dev \
-#    libc6-dev \
-#  && apt-get clean \
-#  && rm -rf /var/lib/apt/lists/*
-
 RUN wget https://github.com/google/googletest/archive/release-1.8.0.tar.gz \
   && tar xf release-1.8.0.tar.gz \
   && cd googletest-release-1.8.0 \
